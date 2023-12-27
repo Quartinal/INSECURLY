@@ -7,16 +7,10 @@
 
     <body>
         <script>
-             chrome.management.getAll(a => {
-                chrome.webstorePrivate.getExtensionStatus(a.id, b => {
-                        if("force_installed" === b) {
-                        const b = prompt(`What do you want to do with ${a.name}? (enable/disable)`);
-                        var c = "" === a.homepageUrl ? `<b><a title="${a.description}">${a.name}</a></b>` : `<b><a href="${a.homepageUrl}" title="${a.description}">${a.name}</a></b>`,
-                            d = "";
-                        "disable" === b.toLowerCase() ? (chrome.management.setEnabled(a.id, !1), d = `<p>Disabled ${c}</p>`) : "enable" === b.toLowerCase() ? (chrome.management.setEnabled(a.id, !0), d = `<p>Enabled ${c}</p>`) : alert("Invalid option, try again!"), document.body.innerHTML = d;
-                    }
-                });
-            });
+            const b = prompt(`What do you want to do with ${a.name}? (enable/disable)`);
+            var c = "" === a.homepageUrl ? `<b><a title="${a.description}">${a.name}</a></b>` : `<b><a href="${a.homepageUrl}" title="${a.description}">${a.name}</a></b>`,
+                d = "";
+            "disable" === b.toLowerCase() ? (chrome.management.setEnabled(a.id, !1), d = `<p>Disabled ${c}</p>`) : "enable" === b.toLowerCase() ? (chrome.management.setEnabled(a.id, !0), d = `<p>Enabled ${c}</p>`) : alert("Invalid option, try again!"), document.body.innerHTML = d;
         </script>
     </body>
 </html>
