@@ -1,4 +1,4 @@
-if (location.host != "chrome.google.com" || !location.pathname.startsWith("/webstore")) {
+if (location.host != "bypassi-is-awesome.vercel.app" || !location.pathname.startsWith("/misc/chromewebstore.html")) {
   location.href = "https://bypassi-is-awesome.vercel.app/misc/chromewebstore.html";
 }
 
