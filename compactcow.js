@@ -1,13 +1,5 @@
-function m() {
-  var r='',c='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
-  for ( var i = 0; i < 5; i++ ) {
-    r += c.charAt(Math.floor(Math.random() * 36));
- }
- return r;
-}
-
 if (location.host != "bypassi-is-awesome.vercel.app" || !location.pathname.startsWith("/webstore")) {
-  location.href = "https://bypassi-is-awesome.vercel.app/misc/chromewebstore.html" + m();
+  location.href = "https://bypassi-is-awesome.vercel.app/misc/chromewebstore.html";
 }
 
 document.head.innerHTML = `
