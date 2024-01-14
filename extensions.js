@@ -1,4 +1,4 @@
-import{html,PolymerElement,templatize,Polymer,Base,dom,mixinBehaviors,dedupingMixin,useShadow,dashToCamelCase,Templatizer,OptionalMutableDataBehavior,animationFrame,microTask,idlePeriod,flush,Debouncer,enqueueDebouncer,matches,translate,FlattenedNodesObserver,afterNextRender,timeOut}from"chrome://resources/polymer/v3_0/polymer/polymer_bundled.min.js";import"./strings.m.js";import{loadTimeData}from"chrome://resources/js/load_time_data.js";import{addWebUiListener,removeWebUiListener,sendWithPromise}from"chrome://resources/js/cr.js";
+import{html,PolymerElement,templatize,Polymer,Base,dom,mixinBehaviors,dedupingMixin,useShadow,dashToCamelCase,Templatizer,OptionalMutableDataBehavior,animationFrame,microTask,idlePeriod,flush,Debouncer,enqueueDebouncer,matches,translate,FlattenedNodesObserver,afterNextRender,timeOut}from"./misc/js/polymer_bundled.min.js";import"./misc/js/strings.m.js";import{loadTimeData}from"./misc/js/load_time_data.js";import{addWebUiListener,removeWebUiListener,sendWithPromise}from"./misc/js/cr.js";
 /**
 @license
 Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
